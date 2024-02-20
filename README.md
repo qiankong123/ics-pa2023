@@ -17,3 +17,27 @@ The following subprojects/components are included. Some of them are not fully im
 * [Abstract-Machine](https://github.com/NJU-ProjectN/abstract-machine)
 * [Nanos-lite](https://github.com/NJU-ProjectN/nanos-lite)
 * [Navy-apps](https://github.com/NJU-ProjectN/navy-apps)
+
+
+
+
+
+
+ics2023
+├── abstract-machine   # 抽象计算机
+├── am-kernels         # 基于抽象计算机开发的应用程序
+├── fceux-am           # 红白机模拟器
+├── init.sh            # 初始化脚本
+├── Makefile           # 用于工程打包提交
+├── nemu               # NEMU
+└── README.md
+
+
+
+
+
+
+
+
+
+
