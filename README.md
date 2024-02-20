@@ -33,6 +33,27 @@ ics2023
 └── README.md
 
 
+按键测试程序:
+cd am-kernels/tests/am-tests
+make ARCH=native mainargs=k run
+
+
+红白机游戏运行
+运行方式
+将游戏ROM放置在nes/rom/目录下, 并命名为xxx.nes, 如nes/rom/mario.nes. 然后可通过mainargs选择运行的游戏, 如:
+make ARCH=native run mainargs=mario
+操作方式
+U — SELECT
+I — START
+J — A键
+K — B键
+W/S/A/D — UP/DOWN/LEFT/RIGHT
+Q — 退出
+
+
+
+
+
 make submit
 下载提交代码失败submit.sh
     git gc
@@ -47,6 +68,20 @@ make submit
 
 
 wget http://jyywiki.cn/pages/ICS/2020/demos/yemu.tar.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
