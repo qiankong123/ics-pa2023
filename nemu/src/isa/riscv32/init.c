@@ -39,7 +39,7 @@ static void restart() {
   Log("hello666");
   
   int i =0;
-  for (i=0;i<100000000;i++)
+  for (i=0;i<100;i++)
   {
     printf("7");
   }
