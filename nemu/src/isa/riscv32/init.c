@@ -35,10 +35,9 @@ static void restart() {
   Log("hello666");
   
   int i =0;
-  while (1)
+  for (i=0;i<1000;i++)
   {
-    printf("777");
-    i++;
+    printf("7");
   }
   
   panic("888");
