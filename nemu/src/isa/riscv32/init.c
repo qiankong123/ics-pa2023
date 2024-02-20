@@ -37,14 +37,8 @@ static void restart() {
   /* The zero register is always 0. */
   cpu.gpr[0] = 0;
   Log("hello666");
-  
-  int i =0;
-  for (i=0;i<100;i++)
-  {
-    printf("7");
-  }
-  
-  panic("888");
+  printf("7");
+  // panic("888");
 }
 
 void init_isa() {
