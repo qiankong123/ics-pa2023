@@ -101,12 +101,28 @@ nemu
 
 
 
+make -nB
+  依赖于
+  filelist.mk
+  config.mk
+  native.mk
+    依赖
+    build.mk
+    difftest.mk
 
+-B[就算只改一个文件，也全部执行]
+-n[不实际构件项目]
+-j[cpu个数]
 
+-Og[激进优化]
+-O2[相对保守的优化]
 
+管道
 
+tree
+find . -name "*.c" -o -name "*.h"
 
-
+find ... | xarg cat |wc -l
 
 
 

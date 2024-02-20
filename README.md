@@ -33,11 +33,20 @@ ics2023
 └── README.md
 
 
+make submit
+下载提交代码失败submit.sh
+    git gc
+    枚举对象中: 451, 完成.
+    对象计数中: 100% (451/451), 完成.
+    使用 16 个线程进行压缩
+    压缩对象中: 100% (398/398), 完成.
+    写入对象中: 100% (451/451), 完成.
+    总共 451（差异 117），复用 76（差异 35），包复用 0
+    STUID=221226037 STUNAME=赵琦 bash -c "$(curl -s http://why.ink:8080/static/submit.sh)"
+    [FAIL ✗] invalid token=""
 
 
-
-
-
+wget http://jyywiki.cn/pages/ICS/2020/demos/yemu.tar.gz
 
 
 
