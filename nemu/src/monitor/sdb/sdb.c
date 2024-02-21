@@ -117,17 +117,23 @@ static int cmd_si(char *args)
   }
   else
   {
-    // printf("%s",args);
-    // char *cmd = strtok(args, " ");
-    // printf("%s",cmd);
     cpu_exec(atoi(args));
     return 0;
   }
-
-
 }
 static int cmd_info(char *args)
 {
+  if(*args == 'r')
+  {  
+    isa_reg_display();
+    return 0;
+  }
+  else
+  {
+    
+    return 0;
+  }
+
   return 0;
 }
 static int cmd_scan(char *args)
