@@ -54,6 +54,14 @@ static int cmd_q(char *args) {
 
 static int cmd_help(char *args);
 
+static int cmd_si(char *args);
+static int cmd_info(char *args);
+static int cmd_scan(char *args);
+static int cmd_calculat(char *args);
+static int cmd_write(char *args);
+static int cmd_delete(char *args);
+
+
 static struct {
   const char *name;
   const char *description;
@@ -62,6 +70,13 @@ static struct {
   { "help", "Display information about all supported commands", cmd_help },
   { "c", "Continue the execution of the program", cmd_c },
   { "q", "Exit NEMU", cmd_q },
+
+  {"si","one step or few step",cmd_si},
+  {"info","infomation -r [Print Register Status] -w [Print monitoring point]",cmd_info},
+  {"x","Scan memory and subsequent digits",cmd_scan},
+  {"p","Calculating expression",cmd_calculat},
+  {"w","Set monitoring points",cmd_write},
+  {"d","delete monitoring points",cmd_delete}
 
   /* TODO: Add more commands */
 
@@ -91,6 +106,38 @@ static int cmd_help(char *args) {
   }
   return 0;
 }
+
+
+static int cmd_si(char *args)
+{
+  if(args != NULL)
+  {
+    printf("%s",args);
+  }
+    cpu_exec(1);
+    return 0;
+}
+static int cmd_info(char *args)
+{
+  return 0;
+}
+static int cmd_scan(char *args)
+{
+  return 0;
+}
+static int cmd_calculat(char *args)
+{
+  return 0;
+}
+static int cmd_write(char *args)
+{
+  return 0;
+}
+static int cmd_delete(char *args)
+{
+  return 0;
+}
+
 
 void sdb_set_batch_mode() {
   is_batch_mode = true;
