@@ -118,7 +118,7 @@ static int cmd_si(char *args)
   else
   {
     printf("%s",args);
-    char *cmd = strtok(NULL, " ");
+    char *cmd = strtok(args, " ");
     printf("%s",cmd);
     return 0;
   }
