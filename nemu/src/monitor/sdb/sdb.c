@@ -126,6 +126,7 @@ static int cmd_info(char *args)
   if(*args == 'r')
   {  
     isa_reg_display();
+    printf("hello");
     return 0;
   }
   else
