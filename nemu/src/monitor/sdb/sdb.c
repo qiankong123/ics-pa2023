@@ -118,8 +118,8 @@ static int cmd_si(char *args)
   else
   {
     printf("%s",args);
-    // char *cmd = strtok(NULL, " ");
-    // printf("%s",cmd);
+    char *cmd = strtok(NULL, " ");
+    printf("%s",cmd);
     return 0;
   }
 
