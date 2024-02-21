@@ -120,6 +120,7 @@ static int cmd_si(char *args)
     printf("%s",args);
     char *cmd = strtok(args, " ");
     printf("%s",cmd);
+    cpu_exec(atoi(args));
     return 0;
   }
 
