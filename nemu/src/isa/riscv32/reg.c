@@ -51,10 +51,10 @@ void isa_reg_display() {
     // {
     //   printf("\");
     // }
-    printf("%s:\t0x%8x\n",regs[i],gpr(i));
+    printf("%s:\t0x%04x\n",regs[i],gpr(i));
 
   }
-  printf("%x\n",0x5566);
+  printf("0x%x\n",0x5566);
 
 }
 
