@@ -47,11 +47,11 @@ void isa_reg_display() {
 
   for (size_t i = 0; i < 32; i++)
   {   
-    if (!(i % 8))
-    {
-      printf("\n");
-    }
-    printf("%s:%x\t",regs[i],gpr(i));
+    // if (!(i % 8))
+    // {
+    //   printf("\");
+    // }
+    printf("%s:%8x\n",regs[i],gpr(i));
 
   }
   printf("%x\n",0x5566);
