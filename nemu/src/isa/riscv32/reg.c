@@ -40,7 +40,7 @@ void isa_reg_display() {
   }
   */
 
-  bool temp ;
+  // bool temp ;
 
   for (size_t i = 0; i < 32; i++)
   {   
@@ -48,9 +48,11 @@ void isa_reg_display() {
     {
       printf("\n");
     }
-    printf("%s:%x\t",regs[i],isa_reg_str2val(regs[i], &temp));
+    // printf("%s:%x\t",regs[i],isa_reg_str2val(regs[i], &temp));
+    printf("%s:%x\t",regs[i],gpr(i));
 
   }
+  printf("\n");
 
 
 }
