@@ -29,7 +29,7 @@ void isa_reg_display() {
     printf("%s:%x\t",regs[i],isa_gdb_regs.gpr[i]);
     if (!(i % 8))
     {
-      printf("\n");
+      printf("666\n");
     }
   }
 }
