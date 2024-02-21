@@ -110,12 +110,20 @@ static int cmd_help(char *args) {
 
 static int cmd_si(char *args)
 {
-  if(args != NULL)
-  {
-    printf("%s",args);
-  }
+  if(args == NULL)
+  {  
     cpu_exec(1);
     return 0;
+  }
+  else
+  {
+    printf("%s",args);
+    // char *cmd = strtok(NULL, " ");
+    // printf("%s",cmd);
+    return 0;
+  }
+
+
 }
 static int cmd_info(char *args)
 {
