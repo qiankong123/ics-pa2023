@@ -52,7 +52,7 @@ void isa_reg_display() {
       printf("\n");
     }
     
-    printf("%s:%x\t",regs[i],gpr(i*8));
+    printf("%s:%x\t",regs[i],gpr(i*2));
 
   }
   printf("\n");
