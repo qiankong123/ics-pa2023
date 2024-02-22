@@ -24,9 +24,7 @@ const char *regs[] = {
 };
 
 void isa_reg_display() {
-
 /*
-
   union isa_gdb_regs copyofregs;
   // union isa_gdb_regs *mycopyofregs = (union isa_gdb_regs*)malloc(sizeof(union isa_gdb_regs));
   gdb_getregs(&copyofregs);
@@ -41,8 +39,6 @@ void isa_reg_display() {
 
   }
 */
-
-
   // bool temp ;// printf("%s:%x\t",regs[i],isa_reg_str2val(regs[i], &temp));
 
   for (size_t i = 0; i < 32; i++)
